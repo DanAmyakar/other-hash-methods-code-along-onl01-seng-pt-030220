@@ -1,29 +1,14 @@
 require 'pry'
 
-  # This is the array we will be passing into the remove_strawberry method
-  # contacts = {
-  #   "Jon Snow" => {
-  #     name: "Jon",
-  #     email: "jon_snow@thewall.we", 
-  #     favorite_ice_cream_flavors: ["chocolate", "vanilla"]
-  #   },
-  #   "Freddy Mercury" => {
-  #     name: "Freddy",
-  #     email: "freddy@mercury.com",
-  #     favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
-  #   }
-  # }
-  
-def remove_strawberry(contacts)
-  contacts.each do |person, contact_details_hash|
-    if person == "Freddy Mercury"
-      contact_details_hash.each do |attribute, data|
-        if attribute == :favorite_ice_cream_flavors
-          data.delete_if {|ice_cream| ice_cream == "strawberry"}
-        end
-        binding.pry
-      end
-    end
-    
-  end
+#This is the groceries hash we'll be passing in to the get_the_keys method
+# groceries = {
+#  dairy: ["milk", "yogurt", "cheese"],
+#  vegetable: ["carrots", "broccoli", "cucumbers"],
+#  meat: ["chicken", "steak", "salmon"],
+#  grains: ["rice", "pasta"]
+# }
+
+def get_the_keys(groceries)
+  #code your solution here!
+  groceries.keys
 end
